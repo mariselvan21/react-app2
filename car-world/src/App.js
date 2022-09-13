@@ -19,10 +19,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Routes> 
+      <Routes> 
         <Route index element={isLogedin == "true" ? <ProductHolder /> : <Login login={loginHandler} />} />
         <Route path='about' element={<About />} />
-       </Routes>   */}
+       </Routes>  
       </div>
   );
 }
