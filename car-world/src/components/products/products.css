@@ -1,0 +1,26 @@
+.product-box{
+    
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 40px;
+    /* border: solid 1px red; */
+}
+.product-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 2px gray;
+
+}
+.product-image{
+    height: 200px;
+    width: 100%;
+    /* border: solid 1px blue; */
+}
+.product-image img{
+    height: 100%;
+    width: 100%;
+}
+.product-detail{
+    height: 200px;
+    width: 100%;
+    /* border: solid 1px green; */
+}

@@ -1,0 +1,17 @@
+header{
+    background-color: gray;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color:red;
+}
+.logo:hover{
+    color:white;
+}
