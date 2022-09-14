@@ -1,0 +1,21 @@
+.product-description{
+    width: 70%;
+    margin: auto;
+    height: 700px;
+    /* border: solid 1px red; */
+}
+.product-description-wrapper{
+    display: flex;
+}
+.product-image{
+    width:50%;
+    height: 700px;
+    /* border: solid 1px red; */
+}
+
+.product-detail{
+    width:50%;
+    height: 700px;
+    /* border: solid 1px red; */
+}
+

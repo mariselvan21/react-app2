@@ -42,7 +42,7 @@ function ProductHolder(){
                 <div className='product-wrapper'>
                    {
                    prodList.map((product) => {
-                   return( <Product key={Math.random()} name={product.name} price={product.price} details={product.details} offer={product.offer} image={product.image} ></Product>)})
+                   return( <Product key={Math.random()} name={product.name} price={product.price} details={product.details} offer={product.offer} image={product.image} id={product.id}></Product>)})
                    }
                 </div>
             </div>

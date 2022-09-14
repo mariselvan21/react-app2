@@ -15,3 +15,17 @@ header{
 .logo:hover{
     color:white;
 }
+.link{
+    margin-left: 40px;
+    text-decoration: none;
+    color:blue;
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+}
+.link:hover{
+    color: white;
+}
+.nav-bar{
+    align-items: center;
+}
