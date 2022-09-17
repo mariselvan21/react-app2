@@ -19,6 +19,7 @@ function Header() {
                         {isLogedin == "true" && <Link to='/' className='link' onClick={() => {
                             setisLogedin("false");
                         }}>Logout</Link>}
+                        <Link to='about' className='link'>About</Link>
                         
                         {isLogedin == "true" && <Link to='product-holder' className='link'>ProductHolder</Link>}
                     </nav>
