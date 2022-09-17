@@ -29,8 +29,8 @@ function App() {
         
         <Route index element={isLogedin == "true" ? <ProductHolder /> : <Login login={loginHandler} />} />
         <Route path='about' element={<About />} />
-        <Route path='product-holder' element={<ProductHolder />}/>
-        <Route path='description/:id' element={<ProductDescription />}></Route>
+        {/* <Route path='product-holder' element={<ProductHolder />}><Route path='about' element={<About />} /></Route> */}
+        <Route path='description/:id' element={<ProductDescription />} />
       </Routes> 
        </Appcontext.Provider>
       

@@ -1,7 +1,10 @@
 import './login.css';
-import {useState} from 'react'
+import {useState} from 'react';
+import {useContext} from 'react';
+import { Appcontext } from '../context/context';
 
 function Login(props){
+    const isLogedin=useContext(Appcontext).isLogedin;
 
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState('');
@@ -34,7 +37,7 @@ function Login(props){
                     <input id='e-mail' className='e-mail' type='text' onChange={updateEmail}/><br/>
                     <label >password</label> <br />
                     <input id='password' className='password' type='password' onChange={updatePassword}/>
-                    <input className='button' type='submit'/>
+                    {isLogedin ? <input className='button' type='submit'/> : <input className='button' type='submit'disabled/>}
 
                 </form>
             </div>

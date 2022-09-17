@@ -22,11 +22,11 @@ function Product(props) {
         }
 
     return (
-        <div className='product-box' onClick={showProductDescription}>
-            <div className='product-image'>
+        <div className='product_box' onClick={showProductDescription}>
+            <div className='product_image'>
                 <img src={props.image}></img>
             </div>
-            <div className='product-details'>
+            <div className='product_details'>
                 <h2>{props.name} </h2>
                 <h2>Rs.{price}</h2>
                 <p>{props.details}</p>

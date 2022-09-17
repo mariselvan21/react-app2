@@ -9,6 +9,7 @@ import image4 from '../car-images/car-4.jpeg';
 import image5 from '../car-images/car-5.jpeg';
 import image6 from '../car-images/car-6.jpeg';
 import image7 from '../car-images/car-7.jpeg';
+import { Outlet } from 'react-router-dom';
 
 function ProductHolder(){
 
@@ -46,6 +47,7 @@ function ProductHolder(){
                    }
                 </div>
             </div>
+            {/* <Outlet></Outlet> */}
         </div>
     )
 }
