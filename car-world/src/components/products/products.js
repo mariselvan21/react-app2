@@ -1,11 +1,14 @@
 import './products.css'
 import { useState } from 'react';
 import ProductDescription from '../product-description/product-description';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { Appcontext } from '../context/context';
 
 function Product(props) {
+
+    
+
 
     const [price, setPrice] = useState(props.price);
     const [dis, setDisabled] = useState(false);
@@ -23,8 +26,7 @@ function Product(props) {
 
     }
 
-    var addToCart = useContext(Appcontext).addToCart;
-    // console.log(addToCart);
+    
 
     return (
         <div className='product_box' >
@@ -41,7 +43,7 @@ function Product(props) {
             </div>
             <button onClick={changePrice} disabled={dis}>Offer apply</button>
             <button onClick={()=>{
-                addToCart(props.Product)
+                props.add(props.item)
             }}>AddToCart</button>
 
         </div >

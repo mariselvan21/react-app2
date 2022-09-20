@@ -1,9 +1,9 @@
 .cart-items-box
 {
-    height: 80px;
+    
     width: 600px;
     margin-right: 160px;
-    border: solid 1px red;
+    border: solid 4px red;
     margin: 20px;
 }
 .cart-items-wrapper{
@@ -12,32 +12,30 @@
     justify-content: space-around;
 }
 .cart-items-image{
-    height: 50px;
+    height: 100px;
     width: 50px;
-    border: solid 1px blue;
+    border: solid 2px green;
 }
 .cart-image{
-    height: 50px;
+    height: 100px;
     width: 50px;
-    border: solid 1px blue;
+    
 }
 .cart-items-name{
-    height: 50px;
-    width: 50px;
-    border: solid 1px blue;
+    
+    border: solid 2px green;
 }
 .cart-items-offer{
-    height: 50px;
-    width: 50px;
-    border: solid 1px blue;
+    
+    border: solid 2px green;
 }
 .cart-items-details{
-    height: 50px;
-    width: 50px;
-    border: solid 1px blue;
+
+    
+    text-align: center;
+    border: solid 2px green;
 }
 .cart-items-price{
-    height: 50px;
-    width: 50px;
-    border: solid 1px blue;
+    
+    border: solid 2px green;
 }

@@ -1,0 +1,17 @@
+.cartIcon-holder{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    
+}
+.cartIcon{
+    font-size: 30px;
+    
+
+}
+.cartIconNumber{
+    position: absolute;
+    color: red;
+    top: 0px;
+    
+}

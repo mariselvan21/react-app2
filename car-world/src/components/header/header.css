@@ -1,5 +1,7 @@
 header{
     background-color: gray;
+    position: sticky;
+    top: 0;
 }
 .container{
     width: 80%;
@@ -14,6 +16,7 @@ header{
 }
 .logo:hover{
     color:white;
+    cursor: pointer;
 }
 .link{
     margin-left: 40px;
@@ -26,6 +29,8 @@ header{
 .link:hover{
     color: white;
 }
+
 .nav-bar{
     align-items: center;
 }
+

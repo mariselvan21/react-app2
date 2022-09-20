@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import './header.css';
+import CartIcon from '../cartIcon/cartIcon';
 import { useContext } from 'react';
 import { Appcontext } from '../context/context';
+import {useNavigate} from 'react-router-dom'
 
 function Header() {
+    var navigateto=useNavigate();
     const isLogedin = useContext(Appcontext).isLogedin;
     console.log(isLogedin);
     const setisLogedin = useContext(Appcontext).setisLogedin;
@@ -14,8 +17,15 @@ function Header() {
                 <div className='header-wrapper'>
                     <div className='logo'>
                         <h1>CAR WORLD</h1>
+    
                     </div>
+                    <div className='cartPlace' onClick={()=>{
+                            navigateto('/cart/')
+                        }}>
+                    <CartIcon />
+                    </div>   
                     <nav className='nav-bar'>
+                    
                         {isLogedin == "true" && <Link to='/' className='link' onClick={() => {
                             setisLogedin("false");
                         }}>Logout</Link>}

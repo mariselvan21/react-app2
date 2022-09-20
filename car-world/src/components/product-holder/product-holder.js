@@ -11,7 +11,7 @@ import image6 from '../car-images/car-6.jpeg';
 import image7 from '../car-images/car-7.jpeg';
 import { Outlet } from 'react-router-dom';
 
-function ProductHolder(){
+function ProductHolder(props){
 
     
 
@@ -43,7 +43,7 @@ function ProductHolder(){
                 <div className='product-wrapper'>
                    {
                    prodList.map((product) => {
-                   return( <Product key={Math.random()} name={product.name} price={product.price} details={product.details} offer={product.offer} image={product.image} id={product.id} item={product}></Product>)})
+                   return( <Product key={Math.random()} add={props.addToCart} name={product.name} price={product.price} details={product.details} offer={product.offer} image={product.image} id={product.id} item={product}></Product>)})
                    }
                 </div>
             </div>

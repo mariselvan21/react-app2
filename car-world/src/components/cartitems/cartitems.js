@@ -10,16 +10,16 @@ function CartItems(props) {
                             <img className='cart-image' src={props.image}/>
                         </div>
                         <div className='cart-items-name'>
-                            <h1>{props.name}</h1>
+                            <p>{props.name}</p>
                         </div>
                         <div className='cart-items-offer'>
-                            <h1>{props.offer}</h1>
+                            <p>{props.offer}%offer</p>
                         </div>
                         <div className='cart-items-details'>
-                            <h1>{props.details}</h1>
+                            <p>{props.details}</p>
                         </div>
                         <div className='cart-items-price'>
-                            <h1>{props.price}</h1>
+                            <p>Rs.{props.price}</p>
                         </div>
                     </div>
                 </div>
