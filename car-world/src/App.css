@@ -1,0 +1,11 @@
+.backgroundImage{
+    width: 100%;
+}
+.app{
+    position: relative;
+}
+.form{
+    position: absolute;
+    top: 150px;
+
+}

@@ -1,0 +1,36 @@
+.form{
+    margin-top: 200px;
+    width: 350px;
+    margin-left: 350px;
+    
+}
+.fieldset
+{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px gray;
+    
+}
+.form-label{
+    margin-left: 70px ;
+    color: red;
+}
+.form-input{
+    margin-left: 70px ;
+    border-color: rgba(128, 128, 128, 0.363);
+    border-radius: 5px;
+    color: blue;
+
+}
+
+.form-input:focus{
+    background-color: rgba(128, 128, 128, 0.219);
+}
+.button{
+    border-radius: 5px;
+    margin-left: 120px;
+    background-color:hotpink
+}
+.button:hover{
+    cursor: pointer;
+    color: blue;
+}

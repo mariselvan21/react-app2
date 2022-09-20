@@ -10,6 +10,7 @@ function Header() {
     const isLogedin = useContext(Appcontext).isLogedin;
     console.log(isLogedin);
     const setisLogedin = useContext(Appcontext).setisLogedin;
+
     // console.log(isLogedin);
     return (
         <header>
@@ -19,11 +20,11 @@ function Header() {
                         <h1>CAR WORLD</h1>
     
                     </div>
-                    <div className='cartPlace' onClick={()=>{
+                    {isLogedin== "true" &&<div className='cartPlace' onClick={()=>{
                             navigateto('/cart/')
                         }}>
                     <CartIcon />
-                    </div>   
+                    </div>   }
                     <nav className='nav-bar'>
                     
                         {isLogedin == "true" && <Link to='/' className='link' onClick={() => {
