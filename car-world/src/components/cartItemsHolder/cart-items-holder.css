@@ -1,0 +1,10 @@
+.cart-items-holder-box{
+    width: 800px;
+    border: solid 1px blue;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.cart-items-holder-wrapper{
+    display: flex;
+    flex-direction: column;
+}

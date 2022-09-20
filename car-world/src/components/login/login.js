@@ -19,7 +19,7 @@ function Login(props){
 
     function updateForm(e){
         e.preventDefault();
-        if(email=="x" && password=='123')
+        if(email=="mari20041999@gmail.com" && password=='12345')
         {
             props.login("true")
         }

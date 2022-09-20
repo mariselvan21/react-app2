@@ -25,7 +25,7 @@ function ProductDescription(){
         <div className='product-description'>
             <div className='product-description-wrapper'>
                 <div className='product-image'>
-                    <img src={currentCar.image} width='350px' height='500px'></img>
+                    <img src={currentCar.image} width='350px' height='500px' />
                 </div>
                 <div className='product-detail'>
                     <h1>{currentCar.name}</h1>

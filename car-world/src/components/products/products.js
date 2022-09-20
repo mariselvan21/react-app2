@@ -1,39 +1,50 @@
 import './products.css'
-import {useState} from 'react';
+import { useState } from 'react';
 import ProductDescription from '../product-description/product-description';
-import {Navigate, useNavigate} from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { Appcontext } from '../context/context';
 
 function Product(props) {
 
-    const[price,setPrice]=useState(props.price);
-    const[dis,setDisabled]=useState(false);
+    const [price, setPrice] = useState(props.price);
+    const [dis, setDisabled] = useState(false);
 
-    const navigateto=useNavigate();
+    const navigateto = useNavigate();
 
-    function changePrice(){
-       
-        let newPrice=props.price-((props.offer/100)*props.price);
+    function changePrice() {
+
+        let newPrice = props.price - ((props.offer / 100) * props.price);
         setPrice(newPrice);
         setDisabled(true);
     }
-        function showProductDescription(){
-            navigateto('/description/'+props.id)
+    function showProductDescription() {
+        navigateto('/description/' + props.id)
 
-        }
+    }
+
+    var addToCart = useContext(Appcontext).addToCart;
+    // console.log(addToCart);
 
     return (
-        <div className='product_box' onClick={showProductDescription}>
-            <div className='product_image'>
-                <img src={props.image}></img>
+        <div className='product_box' >
+            <div className='box-clickable' onClick={showProductDescription}>
+                <div className='product_image'>
+                    <img src={props.image}></img>
+                </div>
+                <div className='product_details'>
+                    <h2>{props.name} </h2>
+                    <h2>Rs.{price}</h2>
+                    <p>{props.details}</p>
+                    <p>{props.offer}%offer </p>
+                </div>
             </div>
-            <div className='product_details'>
-                <h2>{props.name} </h2>
-                <h2>Rs.{price}</h2>
-                <p>{props.details}</p>
-                <p>{props.offer}%offer </p>
-                <button onClick={changePrice} disabled={dis}>Offer apply</button>
-            </div>
-        </div>
+            <button onClick={changePrice} disabled={dis}>Offer apply</button>
+            <button onClick={()=>{
+                addToCart(props.Product)
+            }}>AddToCart</button>
+
+        </div >
 
     )
 }
