@@ -10,7 +10,7 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Appcontext } from './components/context/context';
 
-import backgroundimage from './components/car-images/we-buy-your-cars.jpg'
+import backgroundimage from './components/car-images/car-salesman.jpg'
 
 function App() {
 
