@@ -19,7 +19,8 @@ function App() {
   const [isLogedin, setisLogedin] = useState("false");
   const [cartItems, setCartItems] = useState([]);
 
-
+  const[undoItems,setUndoItems]=useState(cartItems);
+  
 
   function loginHandler(value) {
     setisLogedin(value);
@@ -27,14 +28,27 @@ function App() {
 
   function addToCart(product) {
     setCartItems([...cartItems, product])
-
   }
+
+  function removeCartItems(id){
+    let newCart = [];
+    let index = 0;
+    for(let i =0 ; i<cartItems.length; i++){
+      if(cartItems[i].id != id){
+        newCart[index] = cartItems[i]
+        index++;
+      }
+    }
+    setCartItems(newCart)
+  }
+
+  function undoCartItems()
 
 
   return (
     <div className="app">
 
-      <Appcontext.Provider value={{ isLogedin, setisLogedin, cartItems }}>
+      <Appcontext.Provider value={{ isLogedin, setisLogedin, cartItems,removeCartItems,}}>
 
         <Header />
         { isLogedin=='false' && <div className='backgroundImageContainer'>
@@ -47,7 +61,7 @@ function App() {
           <Route path='about' element={<About />} />
           <Route path='product-holder' element={<ProductHolder addToCart={addToCart} />}><Route path='about' element={<About />} /></Route>
           <Route path='description/:id' element={<ProductDescription />} />
-          <Route path='cart' element={<CartItemsHolder cartItems={cartItems} />} />
+          <Route path='cart' element={<CartItemsHolder cartItems={cartItems}  />} />
 
         </Routes>
       </Appcontext.Provider>

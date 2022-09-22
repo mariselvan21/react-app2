@@ -3,6 +3,7 @@
     border: solid 4px blue;
     margin-top: 200px;
     margin-left: 100px;
+    border-radius: 5px;
 }
 .cart-items-holder-wrapper{
     display: flex;

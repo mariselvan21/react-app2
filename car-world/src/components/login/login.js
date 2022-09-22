@@ -19,7 +19,7 @@ function Login(props) {
 
     function updateForm(e) {
         e.preventDefault();
-        if (email == "mari20041999@gmail.com" && password == '12345') {
+        if (email == "x" && password == '1') {
             props.login("true")
         }
         else {
@@ -32,9 +32,9 @@ function Login(props) {
             <div className='container'>
                 <form className='form'onSubmit={updateForm}>
                     <fieldset className='fieldset'>
-                        <label for='e-mail' className='form-label'>E-MAIL</label> <br />
+                        <label htmlFor='e-mail' className='form-label'>E-MAIL</label> <br />
                         <input id='e-mail' className='form-input' type='text' onChange={updateEmail} /><br />
-                        <label for='password' className='form-label'>PASSWORD</label> <br />
+                        <label htmlFor='password' className='form-label'>PASSWORD</label> <br />
                         <input id='password' className='form-input' type='password' onChange={updatePassword} /> <br /><br />
                         <input className='button' type='submit' /> 
                     </fieldset>

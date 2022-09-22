@@ -8,10 +8,12 @@ import { Appcontext } from '../context/context';
 function Product(props) {
 
     
-
+    
 
     const [price, setPrice] = useState(props.price);
     const [dis, setDisabled] = useState(false);
+
+    const[disable,setDisable]=useState(false);
 
     const navigateto = useNavigate();
 
@@ -44,7 +46,8 @@ function Product(props) {
             <button onClick={changePrice} disabled={dis}>Offer apply</button>
             <button onClick={()=>{
                 props.add(props.item)
-            }}>AddToCart</button>
+                setDisable(true)
+            }} disabled={disable}>AddToCart</button>
 
         </div >
 

@@ -5,6 +5,7 @@
     margin-right: 160px;
     border: solid 4px red;
     margin: 20px;
+    border-radius: 5px;
 }
 .cart-items-wrapper{
     padding: 10px;
@@ -12,12 +13,12 @@
     justify-content: space-around;
 }
 .cart-items-image{
-    height: 100px;
+    height: 140px;
     width: 50px;
     border: solid 2px green;
 }
 .cart-image{
-    height: 100px;
+    height: 140px;
     width: 50px;
     
 }
@@ -29,6 +30,11 @@
     
     border: solid 2px green;
 }
+.cart-items-count{
+    
+    border: solid 2px green;
+}
+
 .cart-items-details{
 
     
@@ -38,4 +44,46 @@
 .cart-items-price{
     
     border: solid 2px green;
+}
+.quantity-button1{
+    height: 40px;
+    width: 40px;
+    margin-left: 150px;
+    border-radius: 10px;
+    border:none;
+    background-color: yellow;
+    cursor: pointer;
+}
+.quantity-button2{
+    height: 40px;
+    width: 40px;
+    margin-left: 4px;
+    border-radius: 10px ;
+    border:none;
+    background-color: yellow;
+    cursor: pointer;
+}
+.quantity-num{
+    display:inline;
+    margin-left: 4px;
+    font-size: 20px;
+}
+.quantity-button1:hover{
+    background-color: orange;
+}
+.quantity-button2:hover{
+    background-color: orange;
+}
+.remove-button{
+    margin-left: 150px;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: red;
+    color: yellow;
+    cursor: pointer;
+    border: none;
+}
+.remove-button:hover{
+    color: white;
 }
